@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #083b4c;
+}
+
+.title {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    line-height: 160px;
+    text-align: center;
+    border: 3px solid red;
+    margin-top: 1rem;
+}
