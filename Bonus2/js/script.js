@@ -7,43 +7,31 @@ for (let i = 1; i <= 100; i++) {
 
     let multiple;
 
+    let colorBox;
+
     if (i % 3 === 0 && i % 5 === 0) {
         multiple = "FizzBuzz";
+        colorBox = `red`;
     }
 
     else if (i % 3 === 0) {
         multiple = "Fizz";
+        colorBox = `green`;
     }
 
     else if (i % 5 === 0) {
         multiple = "Buzz";
-    }
-
-    else {
-        multiple = i;
-    }
-
-    // controllo
-
-    console.log(multiple);
-
-    let colorBox;
-
-    if ( multiple == `FizzBuzz` ) {
-        colorBox = `red`;
-    }
-
-    else if (multiple == `Fizz`) {
-        colorBox = `green`;
-    }
-
-    else if (multiple == `Buzz`) {
         colorBox = `yellow`;
     }
 
     else {
+        multiple = i;
         colorBox = `blu`;
     }
+
+    // controllo
+
+    console.log(multiple, colorBox);
 
     // 2. Stampo i numeri nella pagina
     const rowWrapper = document.querySelector(`.row`);
